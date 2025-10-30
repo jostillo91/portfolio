@@ -54,6 +54,14 @@
       --card-brd: rgba(255,255,255,.18);
     }
 
+/* Control hero card height with ONE number */
+.hero-card { height: 420px; } /* try 360–480px */
+@media (max-width: 1024px) {
+  .hero-card { height: auto; } /* let it grow naturally on tablet/mobile */
+}
+
+
+    /* Animated background */
     .bg-animated{
       position: fixed; inset: 0; z-index: -1;
       background:
@@ -71,11 +79,9 @@
         repeating-linear-gradient(90deg, #0001 0 1px, #0000 1px 2px);
       mix-blend-mode: soft-light; opacity:.25; pointer-events:none;
     }
-    @keyframes bgShift{
-      0% { transform: translate3d(0,0,0) scale(1); }
-      100%{ transform: translate3d(0,-1%,0) scale(1.02); }
-    }
+    @keyframes bgShift{ 0% {transform: translate3d(0,0,0) scale(1);} 100%{transform: translate3d(0,-1%,0) scale(1.02);} }
 
+    /* Glass cards */
     .glass-wrap{
       --card-halo: color-mix(in oklab, var(--acc1) 40%, transparent);
       position: relative;
@@ -111,8 +117,10 @@
 </head>
 
 <body class="font-body transition-colors duration-300 bg-transparent text-slate-900 dark:text-slate-100">
+  <!-- Animated background layer -->
   <div class="bg-animated"></div>
 
+  <!-- Header -->
   <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
       <a href="#home" class="inline-flex items-center gap-3 group">
@@ -141,41 +149,47 @@
   </header>
 
   <main>
-    <section id="home" class="relative pt-16 pb-12 sm:pt-24 sm:pb-20">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
-        <div class="glass-wrap p-6 sm:p-8">
-          <span class="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-emerald-300/90">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Available for work
-          </span>
-          <h1 class="mt-4 text-4xl sm:text-5xl font-display font-semibold leading-tight">Front-End & Shopify Developer</h1>
-          <p class="mt-4 text-lg text-dynamic max-w-prose">
-            I turn ideas into responsive, accessible web experiences with Shopify, React, and Tailwind. Focused on clean code, fast load times, and great UX.
-          </p>
-          <div class="mt-6 flex flex-wrap items-center gap-3">
-            <a href="#projects" class="px-4 py-2 rounded-xl bg-white text-slate-900 font-medium hover:opacity-90 transition">View Projects</a>
-            <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">Contact</a>
-            <a href="https://github.com/jostillo91" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">GitHub</a>
-            <a href="https://www.linkedin.com/in/joshua-castillo-development/" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">LinkedIn</a>
-            <a href="https://upwork.com/freelancers/castillojoshua" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">Upwork</a>
-          </div>
-        </div>
-
-        <div class="glass-wrap relative overflow-hidden rounded-2xl">
-          <div class="aspect-[4/3] w-full"
-               style="background-image: url('task-manager.jpg.jpeg'); background-size: cover; background-position: center;">
-          </div>
-          <div class="p-6">
-            <div class="text-sm text-emerald-300/90 font-medium">Featured Project</div>
-            <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">Task Manager (React)</h2>
-            <p class="mt-3 max-w-md text-dynamic">
-              A clean and responsive task tracker with filtering, data persistence, and React state management.
-            </p>
-            <a href="https://github.com/jostillo91/jostillo91-task-manager-final-project" target="_blank" class="inline-block mt-5 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-medium transition">View on GitHub →</a>
-          </div>
-        </div>
+    <!-- Hero -->
+ <section id="home" class="relative pt-16 pb-12 sm:pt-24 sm:pb-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-stretch">
+    <!-- Left: Glass text card -->
+    <div class="glass-wrap p-6 sm:p-8 h-full flex flex-col overflow-hidden hero-card">
+      <span class="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-emerald-300/90">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Available for work
+      </span>
+      <h1 class="mt-4 text-4xl sm:text-5xl font-display font-semibold leading-tight">Front-End & Shopify Developer</h1>
+      <p class="mt-4 text-lg text-dynamic max-w-prose">
+        I turn ideas into responsive, accessible web experiences with Shopify, React, and Tailwind. Focused on clean code, fast load times, and great UX.
+      </p>
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a href="#projects" class="px-4 py-2 rounded-xl bg-white text-slate-900 font-medium hover:opacity-90 transition">View Projects</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">Contact</a>
+        <a href="https://github.com/jostillo91" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">GitHub</a>
+        <a href="https://www.linkedin.com/in/joshua-castillo-development/" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">LinkedIn</a>
+        <a href="https://upwork.com/freelancers/castillojoshua" target="_blank" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition">Upwork</a>
       </div>
-    </section>
+    </div>
 
+    <!-- Right: Project preview -->
+    <div class="glass-wrap relative rounded-2xl h-full flex flex-col overflow-hidden hero-card">
+      <!-- Make the image fill available height -->
+      <div class="flex-1 min-h-0 w-full"
+           style="background-image: url('task-manager.jpg.jpeg'); background-size: cover; background-position: center;">
+      </div>
+      <div class="p-6">
+        <div class="text-sm text-emerald-300/90 font-medium">Featured Project</div>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">Task Manager (React)</h2>
+        <p class="mt-3 max-w-md text-dynamic">
+          A clean and responsive task tracker with filtering, data persistence, and React state management.
+        </p>
+        <a href="https://github.com/jostillo91/jostillo91-task-manager-final-project" target="_blank" class="inline-block mt-5 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-medium transition">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About -->
     <section id="about" class="py-16 sm:py-20">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-5 gap-10 items-start">
         <div class="md:col-span-2">
@@ -190,6 +204,7 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="py-16 sm:py-20">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between gap-6">
@@ -227,9 +242,11 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <p class="mt-8 text-center text-dynamic pb-10">Open to full-time or contract front-end roles — let’s connect!</p>
   </main>
 
+  <!-- Footer -->
   <footer class="py-10 border-t border-slate-800/60">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-sm flex flex-col sm:flex-row items-center justify-between gap-3 text-dynamic">
       <p>© <span id="year"></span> Joshua Castillo. All rights reserved.</p>
@@ -256,7 +273,6 @@
       const isDark = root.classList.toggle('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
-
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
@@ -267,7 +283,7 @@
       themeMeta?.setAttribute('content', isDark ? '#0b0f1a' : '#f8fafc');
     }
     setThemeMeta();
-    btn.addEventListener('click', setThemeMeta);
+    document.getElementById('themeToggle').addEventListener('click', setThemeMeta);
   </script>
 </body>
 </html>
