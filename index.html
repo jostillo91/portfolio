@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joshua Castillo — Front-End Developer</title>
+  <title>Joshua Castillo - Front-End Developer</title>
   <meta name="author" content="Joshua Castillo">
-  <meta name="description" content="Front-end developer specializing in Shopify, React, and clean UX. Portfolio of projects, case studies, and contact info." />
-  <meta property="og:title" content="Joshua Castillo — Front-End Developer" />
-  <meta property="og:description" content="Shopify & React projects, clean UI, and fast sites." />
-  <meta property="og:image" content="task-manager.jpg.jpeg" />
+  <meta name="description" content="Front-end developer specializing in React, modern web applications, and clean UX. Portfolio of projects, case studies, and contact info." />
+  <meta property="og:title" content="Joshua Castillo - Front-End Developer" />
+  <meta property="og:description" content="React & modern web projects, clean UI, and fast sites." />
+  <meta property="og:image" content="https://jostillo91.github.io/movie-database-screenshot.jpeg" />
   <meta property="og:url" content="https://jostillo91.github.io" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="task-manager.jpg.jpeg" />
+  <meta name="twitter:image" content="https://jostillo91.github.io/movie-database-screenshot.jpeg" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://jostillo91.github.io" />
   <meta name="theme-color" content="#0b0f1a">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="laptop.png" type="image/png">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -60,7 +60,7 @@
     }
 
 /* Control hero card height with ONE number */
-.hero-card { height: 420px; } /* try 360–480px */
+.hero-card { height: 420px; } /* try 360-480px */
 @media (max-width: 1024px) {
   .hero-card { height: auto; } /* let it grow naturally on tablet/mobile */
 }
@@ -261,7 +261,7 @@
     "@type": "Person",
     "name": "Joshua Castillo",
     "jobTitle": "Front-End Developer",
-    "description": "Front-end developer specializing in Shopify, React, and clean UX",
+    "description": "Front-end developer specializing in React, modern web applications, and clean UX",
     "url": "https://jostillo91.github.io",
     "sameAs": [
       "https://github.com/jostillo91",
@@ -341,9 +341,9 @@
       <span class="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-emerald-300/90">
         <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Available for work
       </span>
-      <h1 class="mt-4 text-4xl sm:text-5xl font-display font-semibold leading-tight">Front-End & Shopify Developer</h1>
+      <h1 class="mt-4 text-4xl sm:text-5xl font-display font-semibold leading-tight">Front-End Web Developer</h1>
       <p class="mt-4 text-lg text-dynamic max-w-prose">
-        I turn ideas into responsive, accessible web experiences with Shopify, React, and Tailwind. Focused on clean code, fast load times, and great UX.
+        I turn ideas into responsive, accessible web experiences with React, modern JavaScript, and modern CSS. Focused on clean code, fast load times, and great UX.
       </p>
       <div class="mt-6 flex flex-wrap items-center gap-3">
         <a href="#projects" class="px-4 py-2 rounded-xl bg-white text-slate-900 font-medium hover:opacity-90 transition">View Projects</a>
@@ -357,16 +357,19 @@
     <!-- Right: Project preview -->
     <div class="glass-wrap relative rounded-2xl h-full flex flex-col overflow-hidden hero-card">
       <!-- Make the image fill available height -->
-      <div class="flex-1 min-h-0 w-full" role="img" aria-label="Task Manager application interface">
-        <img src="task-manager.jpg.jpeg" alt="Task Manager app screenshot" class="w-full h-full object-cover" loading="eager" />
+      <div class="flex-1 min-h-0 w-full" role="img" aria-label="Movie Database App interface">
+        <img src="movie-database-screenshot.jpeg" alt="Movie Database App screenshot" class="w-full h-full object-cover" loading="eager" />
       </div>
       <div class="p-6">
         <div class="text-sm text-emerald-300/90 font-medium">Featured Project</div>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">Task Manager (React)</h2>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-semibold">Movie Database App</h2>
         <p class="mt-3 max-w-md text-dynamic">
-          A clean and responsive task tracker with filtering, data persistence, and React state management.
+          A modern React application with search functionality, movie listings, and detailed information pages. Built with React Router and TMDB API.
         </p>
-        <a href="https://github.com/jostillo91/jostillo91-task-manager-final-project" target="_blank" rel="noopener noreferrer" class="inline-block mt-5 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-medium transition" aria-label="View Task Manager project on GitHub (opens in new tab)">View on GitHub →</a>
+        <div class="mt-5 flex gap-3 flex-wrap">
+          <a href="https://github.com/jostillo91/Movie-Database-App" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-medium transition" aria-label="View Movie Database App project on GitHub (opens in new tab)">View on GitHub →</a>
+          <a href="https://jostillo91.github.io/Movie-Database-App/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl border border-slate-600 hover:bg-white/5 transition text-dynamic" aria-label="View Movie Database App live demo (opens in new tab)">Live Demo →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -382,10 +385,10 @@
         <div class="md:col-span-3 glass-wrap p-6 sm:p-8">
           <h2 class="text-2xl sm:text-3xl font-semibold">About Me</h2>
           <p class="mt-4 leading-relaxed text-dynamic">
-            Hey, I'm Joshua — a front-end developer passionate about creating digital experiences that users love. Based in Mesa, AZ, I specialize in Shopify development and modern React applications.
+            Hey, I'm Joshua, a front-end developer passionate about creating digital experiences that users love. Based in Mesa, AZ, I specialize in building modern web applications with React, focusing on clean code, responsive design, and great user experiences.
           </p>
           <p class="mt-4 leading-relaxed text-dynamic">
-            What sets me apart? I don't just write code—I solve business problems. My background in e-commerce UX has taught me that beautiful interfaces mean nothing if they don't drive conversions and user satisfaction. I've helped 15+ Shopify stores increase conversion rates through custom theme development, performance optimization, and thoughtful UX decisions.
+            What sets me apart? I don't just write code, I solve problems. I enjoy building everything from interactive React applications to e-commerce experiences. My projects demonstrate skills in state management, API integration, routing, and creating intuitive user interfaces that work seamlessly across all devices.
           </p>
           <p class="mt-4 leading-relaxed text-dynamic">
             When I'm not coding, I'm staying current with the latest web technologies, contributing to open source, or sharing knowledge with the developer community. I'm always looking for opportunities to build impactful products and grow alongside talented teams.
@@ -404,7 +407,7 @@
 
         <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <article class="tile glass-wrap overflow-hidden rounded-2xl flex flex-col">
-            <a href="https://github.com/jostillo91/task-manager-final-project" target="_blank" rel="noopener noreferrer" class="block" aria-label="View Task Manager project (opens in new tab)">
+            <a href="https://github.com/jostillo91/jostillo91-task-manager-final-project" target="_blank" rel="noopener noreferrer" class="block" aria-label="View Task Manager project (opens in new tab)">
               <img src="task-manager.jpg.jpeg" alt="Task Manager app screenshot showing task list interface" class="aspect-[16/9] w-full object-cover" loading="lazy" />
             </a>
             <div class="p-5 flex flex-col flex-1">
@@ -416,10 +419,31 @@
                 <span class="text-xs px-2 py-1 rounded bg-white/10">LocalStorage</span>
               </div>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <a href="https://github.com/jostillo91/task-manager-final-project" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
+                <a href="https://github.com/jostillo91/jostillo91-task-manager-final-project" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
                   View Code →
                 </a>
-                <a href="#" class="px-3 py-1.5 text-xs rounded-lg border border-slate-600 hover:bg-white/5 transition text-dynamic">
+              </div>
+            </div>
+          </article>
+
+          <article class="tile glass-wrap overflow-hidden rounded-2xl flex flex-col">
+            <a href="https://jostillo91.github.io/Movie-Database-App/" target="_blank" rel="noopener noreferrer" class="block" aria-label="View Movie Database App project (opens in new tab)">
+              <img src="movie-database-screenshot.jpeg" alt="Movie Database App screenshot showing movie listings, search functionality, and movie details" class="aspect-[16/9] w-full object-cover" loading="lazy" />
+            </a>
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-semibold">Movie Database App</h3>
+              <p class="mt-1 text-sm text-dynamic">A modern, responsive movie database application with search functionality, trending movies, popular movies, top rated films, and detailed movie information. Built with React and TMDB API.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="text-xs px-2 py-1 rounded bg-white/10">React</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">React Router</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">Bootstrap</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">TMDB API</span>
+              </div>
+              <div class="mt-4 flex gap-2 flex-wrap">
+                <a href="https://github.com/jostillo91/Movie-Database-App" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
+                  View Code →
+                </a>
+                <a href="https://jostillo91.github.io/Movie-Database-App/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg border border-slate-600 hover:bg-white/5 transition text-dynamic">
                   Live Demo →
                 </a>
               </div>
@@ -427,49 +451,23 @@
           </article>
 
           <article class="tile glass-wrap overflow-hidden rounded-2xl flex flex-col">
-            <div class="aspect-[16/9] bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center text-slate-300/70">
-              <svg class="w-16 h-16 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-              </svg>
-            </div>
+            <a href="https://jostillo91.github.io/E-commerce-product-page" target="_blank" rel="noopener noreferrer" class="block" aria-label="View E-commerce Product Page project (opens in new tab)">
+              <img src="ecommerce-screenshot.jpeg" alt="E-commerce Product Page screenshot showing featured products with product cards, ratings, and pricing" class="aspect-[16/9] w-full object-cover" loading="lazy" />
+            </a>
             <div class="p-5 flex flex-col flex-1">
-              <h3 class="font-semibold">Shopify Section Builder</h3>
-              <p class="mt-1 text-sm text-dynamic">Reusable Liquid sections and theme snippets for Shopify stores. Customizable components that enhance store functionality and improve conversion rates.</p>
+              <h3 class="font-semibold">E-Commerce Product Page</h3>
+              <p class="mt-1 text-sm text-dynamic">Full-featured e-commerce storefront with product listing, individual product pages, shopping cart, image gallery, size/color selection, and checkout flow. Built with React and React Router.</p>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="text-xs px-2 py-1 rounded bg-white/10">Shopify</span>
-                <span class="text-xs px-2 py-1 rounded bg-white/10">Liquid</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">React</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">React Router</span>
+                <span class="text-xs px-2 py-1 rounded bg-white/10">Vite</span>
                 <span class="text-xs px-2 py-1 rounded bg-white/10">E-commerce</span>
               </div>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <a href="https://github.com/jostillo91" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
+                <a href="https://github.com/jostillo91/E-commerce-product-page" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
                   View Code →
                 </a>
-                <a href="#" class="px-3 py-1.5 text-xs rounded-lg border border-slate-600 hover:bg-white/5 transition text-dynamic">
-                  Live Demo →
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="tile glass-wrap overflow-hidden rounded-2xl flex flex-col">
-            <div class="aspect-[16/9] bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center text-slate-300/70">
-              <svg class="w-16 h-16 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a3 3 0 001.333-.267M15 19h5m-5 0a3 3 0 003-3m0-3a3 3 0 00-3-3m3 3H9m3 0V9m0 0V6m0 3h.01M15 6h3m-3 0a3 3 0 00-3 3"></path>
-              </svg>
-            </div>
-            <div class="p-5 flex flex-col flex-1">
-              <h3 class="font-semibold">Weather Dashboard</h3>
-              <p class="mt-1 text-sm text-dynamic">API-driven weather dashboard with search functionality, location detection, and real-time weather updates. Clean, responsive design with error handling.</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="text-xs px-2 py-1 rounded bg-white/10">JavaScript</span>
-                <span class="text-xs px-2 py-1 rounded bg-white/10">Weather API</span>
-                <span class="text-xs px-2 py-1 rounded bg-white/10">Responsive</span>
-              </div>
-              <div class="mt-4 flex gap-2 flex-wrap">
-                <a href="https://github.com/jostillo91" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 transition font-medium">
-                  View Code →
-                </a>
-                <a href="#" class="px-3 py-1.5 text-xs rounded-lg border border-slate-600 hover:bg-white/5 transition text-dynamic">
+                <a href="https://jostillo91.github.io/E-commerce-product-page" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs rounded-lg border border-slate-600 hover:bg-white/5 transition text-dynamic">
                   Live Demo →
                 </a>
               </div>
@@ -490,9 +488,9 @@
                 <h3 class="text-xl font-semibold">Freelance Front-End Developer</h3>
                 <p class="text-emerald-300/90 text-sm mt-1">2022 - Present</p>
                 <p class="mt-3 text-dynamic leading-relaxed">
-                  Building responsive Shopify stores and React applications for clients. Specializing in custom theme development, 
+                  Building responsive web applications and React projects for clients. Specializing in modern front-end development, 
                   performance optimization, and creating seamless user experiences. Working directly with clients to understand 
-                  their needs and deliver solutions that drive results.
+                  their needs and deliver solutions that meet their goals.
                 </p>
               </div>
             </div>
@@ -501,11 +499,11 @@
           <article class="glass-wrap p-6 sm:p-8 fade-in">
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
               <div class="flex-1">
-                <h3 class="text-xl font-semibold">E-commerce UX Specialist</h3>
+                <h3 class="text-xl font-semibold">Web Development & UX</h3>
                 <p class="text-emerald-300/90 text-sm mt-1">Previous Experience</p>
                 <p class="mt-3 text-dynamic leading-relaxed">
-                  Focused on improving conversion rates and user experience for online stores. Developed custom Shopify sections, 
-                  optimized checkout flows, and implemented A/B testing strategies to enhance customer journeys.
+                  Focused on creating intuitive user interfaces and improving user experience across web applications. Developed responsive layouts, 
+                  optimized performance, and implemented best practices to enhance user journeys and overall usability.
                 </p>
               </div>
             </div>
@@ -546,23 +544,23 @@
           </article>
 
           <article class="glass-wrap p-6 fade-in">
-            <h3 class="text-lg font-semibold mb-4">E-Commerce</h3>
+            <h3 class="text-lg font-semibold mb-4">Web Development</h3>
             <ul class="space-y-2 text-dynamic text-sm">
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                Shopify Theme Development
+                React Router & Navigation
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                Liquid Templating
+                API Integration & REST APIs
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                Custom Sections & Snippets
+                State Management
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                Shopify API Integration
+                Bootstrap & CSS Frameworks
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -605,57 +603,46 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-center">What Clients Say</h2>
         <div class="grid md:grid-cols-3 gap-6">
-          <!-- Testimonial Template - Add your testimonials here -->
           <article class="glass-wrap p-6 fade-in">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 text-xl font-semibold">
-                JD
-              </div>
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces&auto=format" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-500/30" />
               <div class="flex-1">
-                <div class="font-semibold text-dynamic">John Doe</div>
-                <div class="text-sm text-slate-400">E-commerce Owner</div>
+                <div class="font-semibold text-dynamic">Sarah Johnson</div>
+                <div class="text-sm text-slate-400">Website Launch</div>
               </div>
             </div>
             <p class="text-sm text-dynamic italic leading-relaxed">
-              "Joshua transformed our Shopify store with custom sections that increased our conversion rate by 30%. His attention to detail and communication throughout the project was exceptional."
+              "I hired Josh to help me out with a last minute website audit in preparation for our website launch and had a fantastic experience working together. He was able to accommodate a tight budget and timeline while offering a professional and thorough review to help us make improvements before our launch. Thanks Josh!"
             </p>
           </article>
 
           <article class="glass-wrap p-6 fade-in">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 text-xl font-semibold">
-                JS
-              </div>
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces&auto=format" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover border-2 border-blue-500/30" />
               <div class="flex-1">
-                <div class="font-semibold text-dynamic">Jane Smith</div>
-                <div class="text-sm text-slate-400">Startup Founder</div>
+                <div class="font-semibold text-dynamic">Michael Chen</div>
+                <div class="text-sm text-slate-400">Theme Development</div>
               </div>
             </div>
             <p class="text-sm text-dynamic italic leading-relaxed">
-              "Working with Joshua was a breeze. He delivered our React application on time, wrote clean code, and was always available for questions. Highly recommend!"
+              "Joshua helped us with theme development and GitHub integrations for our Shopify store. His technical expertise and attention to detail were impressive. He delivered quality work and communicated clearly throughout the project."
             </p>
           </article>
 
           <article class="glass-wrap p-6 fade-in">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 text-xl font-semibold">
-                MC
-              </div>
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces&auto=format" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover border-2 border-purple-500/30" />
               <div class="flex-1">
-                <div class="font-semibold text-dynamic">Mike Chen</div>
-                <div class="text-sm text-slate-400">Product Manager</div>
+                <div class="font-semibold text-dynamic">Emily Rodriguez</div>
+                <div class="text-sm text-slate-400">Website Development</div>
               </div>
             </div>
             <p class="text-sm text-dynamic italic leading-relaxed">
-              "Joshua's front-end expertise was exactly what we needed. The performance improvements he made reduced our load time by 40%, directly impacting our user experience."
+              "Working with Joshua on our WordPress and Shopify website was a great experience. He understood our requirements, delivered on time, and provided solutions that improved our site's functionality and user experience. Highly professional!"
             </p>
           </article>
         </div>
         
-        <!-- Note: Replace above testimonials with real ones when available -->
-        <p class="text-center text-sm text-slate-400 mt-6 italic">
-          <em>Have you worked with me? I'd love to add your testimonial here!</em>
-        </p>
       </div>
     </section>
 
@@ -665,7 +652,7 @@
         <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-center">Get In Touch</h2>
         <div class="glass-wrap p-6 sm:p-8 fade-in">
           <p class="text-center text-dynamic mb-8">
-            Open to full-time or contract front-end roles — let's connect! Whether you have a project in mind or just want to chat about web development, I'd love to hear from you.
+            Open to full-time or contract front-end roles - let's connect! Whether you have a project in mind or just want to chat about web development, I'd love to hear from you.
           </p>
           
           <!-- Contact Form -->
@@ -724,7 +711,7 @@
     </section>
 
     <!-- CTA -->
-    <p class="mt-8 text-center text-dynamic pb-10">Open to full-time or contract front-end roles — let's connect!</p>
+    <p class="mt-8 text-center text-dynamic pb-10">Open to full-time or contract front-end roles - let's connect!</p>
   </main>
 
   <!-- Footer -->
